@@ -40,6 +40,7 @@ console.log( "Tree.prototype: " + Tree.prototype);
 console.log( "theTree.constructor: " + theTree.constructor);
 //实例对象的_proto_
 console.log( "theTree._proto_: " + theTree._proto_);
+
 ```
 
 
@@ -111,6 +112,7 @@ console.log(theTree.__proto__ === Tree.prototype); //原型对象有的__proto__
 	console.log(Tree.constructor === Function); //
 	console.log(Tree.__proto__ === Function.prototype); //Tree对象有__proto__属性，指向Tree的构造函数Function的原型对象
 ```
+
 > ##### Object.prototype的原型对象是null。
 
 > #### 原型结构图
