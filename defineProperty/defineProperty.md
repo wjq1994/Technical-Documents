@@ -3,7 +3,7 @@
 #### 属性描述符
 
 > ##### 数据描述符
-> ```javascript
+```javascript
 	// 在对象中添加一个属性与数据描述符的示例
 	// writeObj 描述符
 	var writeObj = {
@@ -16,7 +16,7 @@
 ```
 
 > ##### 存取描述符
-> ```javascript
+```javascript
 	var bValue;
 	// 在对象中添加一个属性与存取描述符的示例
 	Object.defineProperty(o, "b", {
@@ -34,7 +34,7 @@
 #### 描述符的属性
 
 > ##### writable
-> ```javascript
+```javascript
 	var bValue;
 	Object.defineProperty(o, "a", {
 		value: 30,
@@ -46,7 +46,7 @@
 
 > ##### Enumerable
 > enumerable定义了对象的属性是否可以在 [for...in](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/for...in) 循环和 [Object.keys()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/keys) 中被枚举。
-> ```javascript
+```javascript
 	var o = {};
 	Object.defineProperty(o, "a", {
 		value: 30,
@@ -72,7 +72,7 @@
 > ##### configurable
 > configurable特性表示对象的属性是否可以被[删除](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/delete)，以及除value和writable特性外的其他特性是否可以被修改。
 > 
-> ```javascript
+```javascript
 	var o = {};
 	Object.defineProperty(o, "a", { value: 3,  configurable : false, writable: false} );
 	//以下两种方式赋值 不一样
@@ -84,7 +84,7 @@
 > ##### 一般的Setters 和 Getters
 > configurable特性表示对象的属性是否可以被[删除](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/delete)，以及除value和writable特性外的其他特性是否可以被修改。
 > 
-> ```javascript
+```javascript
 	function Archiver() {
 	  var temperature = null;
 	  var archive = [];

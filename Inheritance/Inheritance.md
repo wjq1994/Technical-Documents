@@ -20,7 +20,7 @@
 > ##### 构造函数绑定
 > 利用call函数，将父对象的构造函数绑定在子对象上。其中构造函数就是
 > 
-> ```javascript
+```javascript
 	function Animal(species) {
 		this.species = "动物";
 	}
@@ -39,7 +39,7 @@
 > ##### prototype模式
 > 使用prototype属性
 > 
-> ```javascript
+```javascript
 	function Animal(species) {
 		this.species = "动物";
 	}
