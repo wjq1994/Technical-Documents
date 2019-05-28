@@ -26,4 +26,3 @@ var obj1 = new Object(); /* new Object() 是保存在堆内存中的 ，变量ob
 var obj2 = obj1; /* obj1，obj2都是new出来得这个对象的引用 */
 obj1.name = "Tom";  /* 所以后面更改obj1.name 会影响obj2.name的值*/
 ```
-

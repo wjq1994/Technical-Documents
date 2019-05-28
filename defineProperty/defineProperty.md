@@ -7,10 +7,12 @@
 	// 在对象中添加一个属性与数据描述符的示例
 	// writeObj 描述符
 	var writeObj = {
+		//该属性对应的值。可以是任何有效的 JavaScript 值（数值，对象，函数等）。默认为 undefined。
 		value: 30,
+		//当且仅当该属性的writable为true时，value才能被赋值运算符改变。默认为 false。
 		writable: true,
-		enumerable: true, //可枚举
-		configurable: false //可配置 delete
+		enumerable: false, //默认false 不可枚举
+		configurable: false //默认false 不可配置 不能被delete
 	}
 	Object.defineProperty(o, "a", writeObj);
 ```
@@ -20,9 +22,11 @@
 	var bValue;
 	// 在对象中添加一个属性与存取描述符的示例
 	Object.defineProperty(o, "b", {
+	//默认为 undefined
 	  get : function(){
 		return bValue;
 	  },
+	//默认为 undefined
 	  set : function(newValue){
 		bValue = newValue;
 	  },
