@@ -39,7 +39,7 @@ console.log( "Tree.prototype: " + Tree.prototype);
 //实例对象引用constructor原理，通过theTree的_proto_属性指向该实例对象对应的原型对象
 console.log( "theTree.constructor: " + theTree.constructor);
 //实例对象的_proto_
-console.log( "theTree._proto_: " + theTree._proto_);
+console.log( "theTree.__proto__: " + theTree.__proto__);
 
 ```
 
